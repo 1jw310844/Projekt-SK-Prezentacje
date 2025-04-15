@@ -1,0 +1,10 @@
+Warstwowy Podział Aplikacji
+Jeśli chodzi o Warstwowy Podział aplikacji, to aplikacja jest dwuwarstwowa. Jest tak za sprawą dwóch warstw
+a dokładnie to warstwy prezentacji oraz warstwy sterowania. W naszym przypadku za warstwę prezentacji odpowiada klasa 
+mainwindow, która łączy interfejs graficzny, udostępniony przez naszą aplikację z logiką odbierania danych od użytkownika
+oraz innymi pomniejszymi funkcjonalnościami. Dodatkowo mainwindow można ogłosić główną klasą niezbędną do funkcjonowania programu.
+Natomiast warstwą sterowania jest klasa symulator oraz jej komponenty takie jak Regulator,ObiektARX oraz Generator.
+Te klasy odpowiadają za bardziej złożone algorytmy takie jak obliczanie wartości sterującej, czy wyjście obiektu.
+Dodatkowym aspektem, który pokazuje, że aplikacja jest dwuwarstwowa jest brak pośredniczącej klasy, która byłaby odpowiedzialna
+za weryfikacje danych oraz ich transfer, pozwalając przy tym całkowicie uniezależnic warstwę GUI od weryfikowania danych
+oraz jakiejkolwiek logiki.
